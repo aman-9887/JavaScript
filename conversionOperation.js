@@ -53,3 +53,70 @@ console.log("By mastering data types and conversions, you can write more efficie
 
 // "" => false
 // "Aman" => true
+
+
+
+
+//  *********************************************** Operations ***********************************************************
+
+let value = 3
+let negvalue = -value
+console.log(negvalue);
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2/2);
+// console.log(2**2);
+// console.log(2%2);
+
+let str1 = "Hello"
+let str2 =" Aman"
+str3 = str1+str2
+console.log(str3);
+
+console.log("Hello" + 2); // "Hello2" (string concatenation)
+console.log("Hello" - 2); // NaN (not a number, subtraction is not defined for strings)
+console.log("Hello" * 2); // NaN (not a number, multiplication is not defined for strings)
+console.log("Hello" / 2); // NaN (not a number, division is not defined for strings)
+console.log("Hello" ** 2); // NaN (not a number, exponentiation is not defined for strings)
+console.log("Hello" % 2); // NaN (not a number, modulus is not defined for strings)
+console.log("This is a conversion operation file.");
+
+console.log("1" + 2); // "12" (string concatenation)
+console.log("1" - 2); // -1 (string is converted to number)
+console.log("1" * 2); // 2 (string is converted to number)
+console.log("1" / 2); // 0.5 (string is converted to number)
+console.log("1" ** 2); // 1 (string is converted to number)
+console.log("1" % 2); // 1 (string is converted to number)
+
+console.log(1+"2"); // "12" (string concatenation)
+console.log("1"+2+2); // "122" (string concatenation)
+console.log(1+2+"2"); // "32" (number addition followed by string concatenation)
+
+console.log(true); // true
+console.log(false); // false
+console.log(+true); // 1 (boolean to number conversion)
+console.log(+false); // 0 (boolean to number conversion)
+console.log(+""); // 0 (empty string to number conversion)
+console.log(true+1); // 2 (boolean to number conversion, true is 1)
+console.log(false+1); // 1 (boolean to number conversion, false is 0)
+console.log(true+"1"); // "true1" (boolean to string concatenation)
+
+let gameCounter = 100
+gameCounter++;
+console.log(gameCounter); // 101 (postfix increment)
+++gameCounter;
+console.log(gameCounter); // 102 (prefix increment)
+gameCounter--;
+console.log(gameCounter); // 101 (postfix decrement)
+--gameCounter;
+console.log(gameCounter); // 100 (prefix decrement)
+
+
+
+
+
+
+
+
