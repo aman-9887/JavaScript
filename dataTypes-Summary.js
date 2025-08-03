@@ -81,3 +81,9 @@ console.log(typeof bigIntValue); // "bigint" (BigInt is a separate type in JavaS
 console.log(typeof undefined); // "undefined"
 // Type of variable null is "object" (this is a known quirk in JavaScript)
 console.log(typeof null); // "object"
+
+
+
+// ******************************************************************************************************************
+
+// Stack(Primitive) and Heap(Non-primitive) are two types of memory allocation in JavaScript.
