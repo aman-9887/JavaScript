@@ -87,3 +87,45 @@ console.log(typeof null); // "object"
 // ******************************************************************************************************************
 
 // Stack(Primitive) and Heap(Non-primitive) are two types of memory allocation in JavaScript.
+
+// Stack is used for static memory allocation and stores primitive data types.
+// It is a last-in-first-out (LIFO) structure where variables are stored in a fixed size.
+// When a function is called, a new stack frame is created for that function, and when the function returns, the stack frame is removed.
+// Example of stack memory allocation:
+let a = 10; // 'a' is stored in stack memory
+let b = 20; // 'b' is also stored in stack memory
+let sum = a + b; // 'sum' is calculated and stored in stack memory
+
+// Heap is used for dynamic memory allocation and stores non-primitive data types like objects and arrays.
+// It is a more flexible memory structure where objects can grow and shrink in size.
+// When an object is created, it is stored in heap memory, and a reference to that object is stored in stack memory.
+// Example of heap memory allocation:
+let person1 = {
+    name: "John",
+    age: 30
+}; // 'person' is stored in heap memory, and a reference to it is stored in stack memory
+// When we create a new object or array, it is stored in heap memory, and the variable holds a reference to that memory location.
+let numbersArray = [1, 2, 3, 4, 5]; // 'numbersArray' is stored in heap memory, and a reference to it is stored in stack memory.
+// When we manipulate the object or array, we are working with the reference in stack memory, but the actual data is in heap memory.
+// This allows for more complex data structures and dynamic memory management in JavaScript.
+// Understanding the difference between stack and heap memory is crucial for optimizing performance and managing memory effectively in JavaScript applications.
+// In summary, JavaScript uses stack memory for primitive data types and function calls, while heap memory is used for non-primitive data types like objects and arrays.
+// This distinction is important for understanding how memory is managed in JavaScript and how it affects performance and data manipulation.
+
+
+let myName= "Aman";
+let anothername= myName; // anothername holds a reference to the same string in stack memory
+anothername= "Sonu";
+console.log(anothername); // "Sonu" (anothername is updated, but myName remains "Aman")
+console.log(myName); // "Aman" (myName is unchanged)
+
+
+let user = {
+    email: "user@google.com",
+    upi: "user@upi"
+}; // user is stored in heap memory, and a reference to it is stored in stack memory
+let user2 = user; // user2 holds a reference to the same object in heap memory
+user2.email = "user2@gmail.com"; // user2 is updated, which also updates the original object in heap memory
+console.log(user.email); // "user2@gmail.com"
+console.log(user2.email); // "user2@gmail.com"
+
