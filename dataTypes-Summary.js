@@ -599,4 +599,3 @@ console.log("obj1 === obj3:", obj1 === obj3); // true (same reference)
 
 console.log("\n=== GUIDE COMPLETED ===");
 console.log("This comprehensive guide covers JavaScript data types and memory management.");
-console.log("Practice these concepts to build a strong foundation in JavaScript!");

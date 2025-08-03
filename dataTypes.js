@@ -456,5 +456,3 @@ console.log("• Non-primitives: object (includes arrays, functions, dates, etc.
 console.log("• Type checking: typeof operator, Array.isArray(), Number.isNaN()");
 console.log("• Best practices: strict mode, meaningful names, proper initialization");
 
-console.log("\n✅ JavaScript fundamentals demonstration completed!");
-console.log("🎓 You now understand data types, variables, and type checking in JavaScript!");

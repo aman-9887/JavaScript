@@ -518,5 +518,3 @@ console.log("✅ Use slice() for most extraction needs");
 console.log("✅ Chain methods for complex operations");
 console.log("✅ Remember strings are zero-indexed");
 console.log("✅ Use strict equality (===) for comparisons");
-
-console.log("\n🚀 You now have a comprehensive understanding of JavaScript strings!");
